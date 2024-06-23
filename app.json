@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "SpaceBoxDemo",
+    "slug": "SpaceBoxDemo",
+    "scheme": "SpaceBoxDemo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "SpaceBox needs access to your Camera."
+      },
+      "bundleIdentifier": "com.SpaceBoxDemo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": ["android.permission.CAMERA"],
+      "package": "com.SpaceBoxDemo"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "SpaceBox needs access to your Camera.",
+          "enableMicrophonePermission": false,
+          "microphonePermissionText": "SpaceBox needs access to your Microphone."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "SpaceBox needs access to your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d2183b18-622b-4acf-994c-be7b728088dd"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+export const ACTIVE = "active";
+export const SAVE_ALL_IMAGES = "SAVE ALL IMAGES";
+export const SAVE_IMAGE = "SAVE IMAGE";
+export const IMAGE_SAVED = "Image Saved";
+export const IMAGES_SAVED = "Images saved";
+export const TAKE_PHOTO = "Take a photo";
+export const CHOOSE_PHOTO = "Choose a photo";
+export const PHOTO_GALLERY = "Photo Gallery";
+export const NO_IMAGES_FOUND = "No Images found!";
+export const GALLERY = "Gallery";
